@@ -1,7 +1,11 @@
+import world from "./assets/world.svg"
+
+
 function Header(){
     return (
-        <div>
-            <h1>Nah this bro is tripping</h1>
+        <div className="header">
+            <img src={world}></img>
+            <h2>My Travel Journal</h2>
         </div>
     )
 }

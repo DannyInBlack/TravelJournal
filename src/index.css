@@ -30,11 +30,13 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  padding: 0;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  margin: 0px;
 }
 
 button {
@@ -56,9 +58,51 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+.content{
+  border: solid black 1px;
+  
+}
+.card{
+  color: black;
+  border: black solid 1px;
+  display: flex;
+}
+.card>div{
+  width: 500px;
+}
+.card>img{
+  object-fit: cover;
+  width:125px;
+  height: 168px;
+  border-radius: 5px;
+}
+.header>img{
+  width: 24px;
+}
+.header>h2{
+  margin-left: 10px;
+  place-self: center;
+}
+.header{
+  height: 55px;
+  min-width: 800px;
+  background-color: #F55A5A;
+  margin-bottom: 0px;
+  place-content: center;
+  display: flex;
+}
+#root{
+  background-color: white;
+  padding: 0px;
+}
+.app{
+  padding-bottom: 0px;
+  margin: 30px;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
+    color: white;
     background-color: #ffffff;
   }
   a:hover {
